@@ -1,38 +1,80 @@
-.App {
+.App{
+  background-image: url('./images/homeImage_background.svg');
+  background-position-x: -6.5%;
+  background-position-y: 16%;
+  background-repeat: no-repeat;
+}
+.App_Content {
+  display: grid;
+  grid-template: 1fr / 38% 62%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .Form{
+  grid-column: 2/3;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Form{
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 30.5%;
+  padding-right: 30.5%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Form form{
+  width: 39%;
+}
+form select {
+  width: 30%;
+}
+form input[type=text]:nth-child(3n) {
+  width: 70%;
+}
+form input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type=checkbox] {
+  align-items: flex-start;
+}
+form input[type=submit] {
+  width: 66%;
+  background-color: #EF3340;
   color: white;
+  padding: 23px 20px;
+  margin: 43px 107px 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.Hero{
+  width: 100%;
+  text-align: left;
+  padding-top: 15%;
+  padding-left: 21%;
+  grid-column: 1/2;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Hero img {
+  padding-right: 38%;
 }
+p {
+  font-size: 12px;
+  padding-right: 38%;
+}
+p h2{
+  margin-top: 2%;
+  margin-bottom: 4%;
+  font-size: 36px;
+}
+p h2 b{
+  color: #D65266;
+}
+p span{
+  font-size: 14px;
+}
+/* .Hero span:nth-child(2){
+  margin-top: 2%;
+  font-size: 36px;
+  margin-bottom: 10%;
+} */
