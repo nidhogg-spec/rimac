@@ -1,5 +1,6 @@
 import './Home.css';
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 
 export default function Home(){
 
@@ -8,7 +9,35 @@ export default function Home(){
   const [Phone, setPhone] = useState()
   const [Plate, setPlate] = useState()
   const [Terms, setTerms] = useState()
+  const [error, setError] = useState()
 
+  let history = useHistory()
+
+  function validarFormulario() {
+    let error = {};
+    let formularioValido = true;
+
+    if (!Tipodoc) {
+        formularioValido = false;
+        error['Tipodoc'] = "Por favor, selecciona un tipo de documento.";
+    }
+
+    if (!Nmrdoc) {
+        formularioValido = false;
+        error["Nmrdoc"] = "Por favor, ingresa un numero de documento.";
+    }
+
+    if (!Phone) {
+        formularioValido = false;
+        error["Phone"] = "Por favor, ingresa un Celular.";
+    }
+
+    if (!Plate) {
+        formularioValido = false;
+        error["Placa"] = "Por favor, ingresa un numero de placa.";
+    }
+    setError({error:error})
+  } 
   function handleSubmit (e){
     e.preventDefault();
     fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -28,7 +57,7 @@ export default function Home(){
         return r.json();
       })
       .then((data) => {
-        console.log(data)
+        history.push('/ArmaPlan/'+data.Plate)
       });
   }
   return (
@@ -42,11 +71,12 @@ export default function Home(){
           </p>
           <span>@ 2021 RIMAC Seguros y Reaseguros</span>
         </div>
+
         <div className="Form">
           <form onSubmit={handleSubmit}> 
             <h2>Dejanos tus datos</h2>
             <select value={Tipodoc} onChange={(e)=> setTipodoc(e.target.value)}>
-              <option selected value="dni">DNI</option>
+              <option value="dni">DNI</option>
               <option value="ruc">RUC</option>
               <option value="passport">PASAPORTE</option>
             </select>

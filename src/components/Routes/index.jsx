@@ -12,7 +12,7 @@ const Routes = () => (
       <Route exact path="/">
         <Home />
       </Route>
-      <Route exact path="/ArmaPlan">
+      <Route path="/ArmaPlan/:plate">
         <ArmaPlan />
       </Route>
     </Switch>
