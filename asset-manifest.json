@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nidhogg-spec/rimac/static/css/main.67516f7e.chunk.css",
+    "main.js": "/nidhogg-spec/rimac/static/js/main.574d9e10.chunk.js",
+    "main.js.map": "/nidhogg-spec/rimac/static/js/main.574d9e10.chunk.js.map",
+    "runtime-main.js": "/nidhogg-spec/rimac/static/js/runtime-main.cc096012.js",
+    "runtime-main.js.map": "/nidhogg-spec/rimac/static/js/runtime-main.cc096012.js.map",
+    "static/js/2.182213ab.chunk.js": "/nidhogg-spec/rimac/static/js/2.182213ab.chunk.js",
+    "static/js/2.182213ab.chunk.js.map": "/nidhogg-spec/rimac/static/js/2.182213ab.chunk.js.map",
+    "static/js/3.620882eb.chunk.js": "/nidhogg-spec/rimac/static/js/3.620882eb.chunk.js",
+    "static/js/3.620882eb.chunk.js.map": "/nidhogg-spec/rimac/static/js/3.620882eb.chunk.js.map",
+    "index.html": "/nidhogg-spec/rimac/index.html",
+    "static/css/main.67516f7e.chunk.css.map": "/nidhogg-spec/rimac/static/css/main.67516f7e.chunk.css.map",
+    "static/js/2.182213ab.chunk.js.LICENSE.txt": "/nidhogg-spec/rimac/static/js/2.182213ab.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/nidhogg-spec/rimac/static/media/homeImage_background.f3014816.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc096012.js",
+    "static/js/2.182213ab.chunk.js",
+    "static/css/main.67516f7e.chunk.css",
+    "static/js/main.574d9e10.chunk.js"
+  ]
+}
